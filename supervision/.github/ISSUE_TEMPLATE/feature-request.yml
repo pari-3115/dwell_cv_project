@@ -1,0 +1,50 @@
+name: 🤩 Feature Request
+title: "[Feature]: "
+description: Suggest a new feature or improvement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a Supervision 🤩 Feature Request!
+
+  - type: checkboxes
+    attributes:
+      label: Search before asking
+      description: Please search [issues](https://github.com/roboflow/supervision/issues) and [discussions](https://github.com/roboflow/supervision/discussions) first.
+      options:
+        - label: I have searched the issues and discussions and found no similar feature request.
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Feature Description
+      description: What feature would you like and why?
+      placeholder: |
+        **What:** Describe the feature...
+
+        **Why:** What problem does it solve? Who would benefit?
+
+        **How (optional):** Any ideas on implementation?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Example Usage
+      description: (Optional) Show how you'd like to use this feature
+      placeholder: |
+        ```python
+        import supervision as sv
+
+        # Your example usage here
+        ```
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?
+      description: (Optional) We encourage community contributions!
+      options:
+        - label: Yes I'd like to help by submitting a PR!

@@ -1,0 +1,3 @@
+supervision
+ultralytics
+jsonargparse[signatures]

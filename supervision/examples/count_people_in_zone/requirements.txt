@@ -1,0 +1,6 @@
+gdown
+inference
+supervision
+tqdm
+ultralytics
+jsonargparse[signatures]

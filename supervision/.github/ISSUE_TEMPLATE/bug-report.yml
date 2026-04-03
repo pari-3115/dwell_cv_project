@@ -1,0 +1,68 @@
+name: 🐞 Bug Report
+title: "[Bug]: "
+description: Report a bug or unexpected behavior in Supervision
+labels: [bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: Search before asking
+      description: Please search [issues](https://github.com/roboflow/supervision/issues) and [discussions](https://github.com/roboflow/supervision/discussions) first.
+      options:
+        - label: I have searched the issues and discussions and found no similar bug report.
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Bug
+      description: Describe the bug, what you expected, and what actually happened.
+      placeholder: |
+        **What's the bug?**
+        Brief description...
+
+        **Expected behavior:**
+        What should happen...
+
+        **Actual behavior:**
+        What actually happens...
+
+        **Error/Traceback (if any):**
+        ```python
+        # Paste error messages here
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Environment
+      description: Your setup details
+      placeholder: |
+        - Supervision: 0.23.0
+        - Python: 3.10.12
+        - OS: Ubuntu 22.04
+      value: |
+        - Supervision:
+        - Python:
+        - OS:
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Minimal Reproducible Example
+      description: Code to reproduce the bug ([guide](https://stackoverflow.com/help/minimal-reproducible-example))
+      placeholder: |
+        ```python
+        import supervision as sv
+
+        # Your code here
+        ```
+    validations:
+      required: false
+
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?
+      description: (Optional) We encourage community contributions!
+      options:
+        - label: Yes I'd like to help by submitting a PR!
